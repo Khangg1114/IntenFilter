@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent("android.intent.action.VIEW");
                 intent.setClassName("com.example.webview", "com.example.webview.MainActivity");
-                intent.setData(Uri.parse("https://google.com"));
+                intent.setData(Uri.parse("https://"+edtlink.getText().toString()));
                 startActivity(intent);
             }
         });
